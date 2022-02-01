@@ -12,7 +12,7 @@ class Champion extends JFrame {
   public Champion(String champ){
     name = champ;
     pic.setSize(ICONSIZE);
-    ImageIcon img = new ImageIcon("H:/images/" + champ + ".png");
+    ImageIcon img = new ImageIcon("H:/images/league/" + champ + ".png");
     Image image = img.getImage();
     Image newImage = image.getScaledInstance(200,200, Image.SCALE_SMOOTH);
     pic.setIcon(new ImageIcon(newImage));
