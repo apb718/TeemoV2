@@ -1,20 +1,32 @@
+package apb718.main;
 import javax.swing.*;
+import java.awt.*;
+
 class Champion extends JFrame {
 
   private String name;
   private JLabel pic = new JLabel();
 
+  private final Dimension ICONSIZE = new Dimension(100,100);
 
   public Champion(String champ){
-    name = champ;  
-    pic.setIcon(new ImageIcon("H:/images/" + champ));
+    name = champ;
+    pic.setSize(ICONSIZE);
+    ImageIcon img = new ImageIcon("H:/images/" + champ + ".png");
+    Image image = img.getImage();
+    Image newImage = image.getScaledInstance(200,200, Image.SCALE_SMOOTH);
+    pic.setIcon(new ImageIcon(newImage));
   }
 
-//   JLable  lblPic = new javax.swing.JLabel();
-//  lblPic.setIcon(new javax.swing.ImageIcon("D:\\picture\\Image.JPG")); 
+  public String getName(){
+    return name;
+  }
+  public JLabel getLabelPic() {
+    return pic;
+  }
 
 
   public String toString(){
-    return "\nName: " + name + "\nPic Location:H:/images/" + name + "\n";
+    return "\nName: " + name + "\nPic Location:H:/images/league" + name + ".png\n";
   }
 }
