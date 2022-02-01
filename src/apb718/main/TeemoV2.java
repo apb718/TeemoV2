@@ -28,6 +28,8 @@ public class TeemoV2 extends JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+        add()
     }
 
 
