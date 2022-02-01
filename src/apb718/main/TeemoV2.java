@@ -29,7 +29,7 @@ public class TeemoV2 extends JFrame {
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        add()
+        
     }
 
 
@@ -72,3 +72,19 @@ public class TeemoV2 extends JFrame {
 
 
 }
+
+// import javax.swing.*;
+// import java.util.ArrayList;
+
+// class Main extends JFrame{
+//   private static final String[] ALL_CHAMPIONS= {"Red","Blue","Green"};
+//   private static ArrayList<Champion> allChampObjects = new ArrayList<Champion>();
+  
+//   public static void main(String[] args) {
+    
+//     for(String champ : ALL_CHAMPIONS){
+//       allChampObjects.add(new Champion(champ));
+//     }
+//     System.out.println(allChampObjects);
+//   }
+  
