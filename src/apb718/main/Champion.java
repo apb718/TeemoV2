@@ -7,7 +7,7 @@ class Champion extends JFrame {
   private String name;
   private JLabel pic = new JLabel();
 
-  private final Dimension ICONSIZE = new Dimension(100,100);
+  private final Dimension ICONSIZE = new Dimension(200,100);
 
   public Champion(String champ){
     name = champ;
